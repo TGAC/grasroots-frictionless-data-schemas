@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"title": "Field Trial Data Package",
-	"description": "Field Trial Data Package is a specification for detailing a field trial containing one or more studies.",
+	"title": "Field Trial Data Resource",
+	"description": "Field Trial Data Resource is a specification for detailing a field trial containing one or more studies.",
 	"type": "object",
 	"required": [
 		"profile",
@@ -9,9 +9,6 @@
 	],
 	"properties": {
 		"profile": {
-			"enum": [
-				"data-package"
-			],
 			"propertyOrder": 10,
 			"title": "Profile",
 			"description": "The profile of this descriptor.",
@@ -19,7 +16,7 @@
 			"type": "string",
 			"examples": [
 				"{\n  \"profile\": \"tabular-data-package\"\n}\n",
-				"{\n  \"profile\": \"http://example.com/my-profiles-json-schema.json\"\n}\n"
+				"{\n  \"profile\": \"https://grassroots.tools/frictionless-data/schemas/field-trial-trial-package.json\"\n}\n"
 			]
 		},
 		"id": {
@@ -36,7 +33,7 @@
 		"name": {
 			"propertyOrder": 20,
 			"title": "Name",
-			"description": "The name of the Field Trial.",
+			"description": "The name of the field trial.",
 			"type": "string",
 			"pattern": "^([-a-z0-9._/])+$",
 			"context": "This is ideally a url-usable and human-readable name. Name `SHOULD` be invariant, meaning it `SHOULD NOT` change when its parent descriptor is updated.",
@@ -48,7 +45,6 @@
 			"propertyOrder": 30,
 			"title": "Programme",
 			"description": "The name of the programme that this field trial is a part of.",
-			"context": "This is a short acronym or abbreviation for this Programme",
 			"type": "string",
 			"examples": [
 				"{\n  \"programme\": \"Designing Future Wheat\"\n}\n"
