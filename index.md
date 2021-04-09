@@ -7,9 +7,9 @@ Our data hierarchy closely follows the [Breeding API (BrAPI)](https://brapi.org/
 
 Currently we have the following profiles:
 
- * [Programme](https://grassroots.tools/frictionless-data/schemas/field-trial-programme-package.json)
- * [Field Trial](https://grassroots.tools/frictionless-data/schemas/field-trial-trial-package.json)
- * [Plots](https://grassroots.tools/frictionless-data/schemas/field-trial-plots-package.json)
+ * [Programme](https://grassroots.tools/frictionless-data/schemas/field-trials/programme-resource.json)
+ * [Field Trial](https://grassroots.tools/frictionless-data/schemas/field-trials/trial-resource.json)
+ * [Plots](https://grassroots.tools/frictionless-data/schemas/field-trials/plots-resource.json)
 
 We are also developing a [cross-platform stand-alone tool](https://github.com/TGAC/grassroots-client-frictionless-data) to extract the data from our Frictionless Data packages into convenient formats for people to use.
 

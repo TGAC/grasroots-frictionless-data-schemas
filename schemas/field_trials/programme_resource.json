@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"title": "Field Trial Programme Data Package",
-	"description": "Field Trial Programme Data Package is a specification for detailing the plots within a field trial programme.",
+	"title": "Field Trial Programme Data Resource",
+	"description": "Field Trial Programme Data Resource is a specification for detailing a field trial programme.",
 	"type": "object",
 	"required": [
 		"profile",

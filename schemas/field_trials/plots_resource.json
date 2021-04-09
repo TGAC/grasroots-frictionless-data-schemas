@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Field Trial Plots Data Package",
-  "description": "Field Trial Plots Data Package is a specification for detailing the plots within a field trial study.",
+  "title": "Field Trial Plots Data Resource",
+  "description": "Field Trial Plots Data Resource is a specification for detailing the plots within a field trial study.",
   "type": "object",
   "required": [
     "resources",

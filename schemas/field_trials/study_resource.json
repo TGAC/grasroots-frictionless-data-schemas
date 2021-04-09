@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"title": "Field Trial Data Resource",
-	"description": "Field Trial Data Resource is a specification for detailing a field trial containing one or more studies.",
+	"title": "Field Trial Study Data Resource",
+	"description": "Field Trial Study Data Resource is a specification for detailing a field trial containing one or more studies.",
 	"type": "object",
 	"required": [
 		"profile",
