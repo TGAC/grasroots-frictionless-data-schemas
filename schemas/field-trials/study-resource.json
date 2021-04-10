@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"title": "Field Trial Study Data Resource",
-	"description": "Field Trial Study Data Resource is a specification for detailing a field trial containing one or more studies.",
+	"description": "Field Trial Study Data Resource is a specification for detailing a Sstudy",
 	"type": "object",
 	"required": [
 		"profile",
@@ -33,33 +33,73 @@
 		"name": {
 			"propertyOrder": 20,
 			"title": "Name",
-			"description": "The name of the field trial.",
+			"description": "The name of the study.",
 			"type": "string",
 			"pattern": "^([-a-z0-9._/])+$",
 			"context": "This is ideally a url-usable and human-readable name. Name `SHOULD` be invariant, meaning it `SHOULD NOT` change when its parent descriptor is updated.",
 			"examples": [
-				"{\n  \"name\": \"Designing Future Wheat\"\n}\n"
+				"{\n  \"name\": \"DFW Academic Toolkit Trial H2019\"\n}\n"
 			]
 		},
-		"programme": {
+		"trial": {
 			"propertyOrder": 30,
-			"title": "Programme",
-			"description": "The name of the programme that this field trial is a part of.",
+			"title": "Trial",
+			"description": "The name of the field trial that this study is a part of.",
 			"type": "string",
 			"examples": [
-				"{\n  \"programme\": \"Designing Future Wheat\"\n}\n"
+				"{\n  \"trial\": \"DFW Academic Toolkit Trial\"\n}\n"
 			]
 		},
-		"team": {
+		"location": {
 			"propertyOrder": 40,
-			"title": "Team",
-			"description": "The teams or organizations running this field trial.",
+			"title": "Location",
+			"description": "The name of the location where this study took place.",
 			"type": "string",
 			"examples": [
-				"{\n  \"team\": \"Rothamsted Research and the John Innes Centre\"\n}\n",
-				"{\n  \"team\": \"The Earlham Institute\"\n}\n"
+				"{\n  \"location\": \"Black Horse Field\"\n}\n"
 			]
 		},
+		"curator_name": {
+			"propertyOrder": 50,
+			"title": "Curator Name",
+			"description": "The name of the person curating this data.",
+			"type": "string",
+			"examples": [
+				"{\n  \"curator_name\": \"Mrs Wheat\"\n}\n"
+			]
+		},
+		"curator_email": {
+			"propertyOrder": 60,
+			"title": "Curator Email",
+			"description": "The email address of the person curating this data.",
+			"type": "string",
+			"format": "email",
+			"examples": [
+				"{\n  \"curator_name\": \"winter.wheat@crops.org\"\n}\n"
+			]
+		},
+		"contact_name": {
+			"propertyOrder": 70,
+			"title": "Contact Name",
+			"description": "The name of the person to contact about this data.",
+			"type": "string",
+			"examples": [
+				"{\n  \"contact_name\": \"Mrs Wheat\"\n}\n"
+			]
+		},
+		"contact_email": {
+			"propertyOrder": 80,
+			"title": "Contact Email",
+			"description": "The email address of the person to contact about this data.",
+			"type": "string",
+			"format": "email",
+			"examples": [
+				"{\n  \"contact_email\": \"winter.wheat@crops.org\"\n}\n"
+			]
+		},
+
+	
+
 		"licenses": {
 			"propertyOrder": 110,
 			"title": "Licenses",
