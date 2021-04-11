@@ -97,6 +97,139 @@
 				"{\n  \"contact_email\": \"winter.wheat@crops.org\"\n}\n"
 			]
 		},
+		"sowing_date": {
+			"propertyOrder": 90,
+			"title": "Sowing Date",
+			"description": "The date when the seeds were sown in the field.",
+			"type": "date",
+			"examples": [
+				"{\n  \"sowing_date\": \"2015-09-21\"\n}\n"
+			]
+		},
+		"harvest_date": {
+			"propertyOrder": 100,
+			"title": "Harvest Date",
+			"description": "The date when the seeds were harvested from the field.",
+			"type": "date",
+			"examples": [
+				"{\n  \"harvest_date\": \"2015-09-21\"\n}\n"
+			]
+		},
+		"description": {
+			"propertyOrder": 110,
+			"title": "Description",
+			"description": "A description of the Study.",
+			"type": "string",
+			"examples": [
+				"{\n  \"description\": \"A study to investigate wheat frost resistance.\"\n}\n"
+			]
+		},
+		"design": {
+			"propertyOrder": 120,
+			"title": "Design",
+			"description": "Information about the design of the Study.",
+			"type": "string",
+			"examples": [
+				"{\n  \"design\": \"A study to investigate wheat frost resistance.\"\n}\n"
+			]
+		},
+		"growing_conditions": {
+			"propertyOrder": 130,
+			"title": "Growing Conditionts",
+			"description": "The Growing Conditions of the Study.",
+			"type": "string",
+			"examples": [
+				"{\n  \"growing_conditions\": \"A study to investigate wheat frost resistance.\"\n}\n"
+			]
+		},
+		"phenotype_notes": {
+			"propertyOrder": 140,
+			"title": "Phenotype Gathering Notese",
+			"description": "Any information relating to how phenotypes were taken..",
+			"type": "string",
+			"examples": [
+				"{\n  \"phenotype_notes\": \"A study to investigate wheat frost resistance.\"\n}\n"
+			]
+		},
+		"weather": {
+			"propertyOrder": 150,
+			"title": "Weather",
+			"description": "A web link to see any details of the weather relating to the study.",
+			"type": "string",
+			"format": "uri",
+			"examples": [
+				"{\n  \"weather\": \"https://weather.link/study\"\n}\n"
+			]
+		},
+		"crop": {
+			"propertyOrder": 160,
+			"title": "Crop",
+			"description": "The previous crop grown at the location of the Study.",
+			"type": "string",
+			"examples": [
+				"{\n  \"crop\": \"Winter Wheat.\"\n}\n"
+			]
+		},
+		"previous_crop": {
+			"propertyOrder": 170,
+			"title": "Previous Crop",
+			"description": "The previous crop grown at the location of the Study.",
+			"type": "string",
+			"examples": [
+				"{\n  \"previous_crop\": \"Barley.\"\n}\n"
+			]
+		},
+		"ph_min": {
+			"propertyOrder": 170,
+			"title": "pH Minimum",
+			"description": "The minimum value of the pH of the soil for this Study.",
+			"type": "number",
+			"constraints": {
+				"minimum": 0,
+				"maximum": 14
+			},
+			"examples": [
+				"{\n  \"ph_min\": 7.3\n}\n"
+			]
+		},
+		"ph_max": {
+			"propertyOrder": 180,
+			"title": "pH Maximum",
+			"description": "The maximum value of the pH of the soil for this Study.",
+			"type": "number",
+			"constraints": {
+				"minimum": 0,
+				"maximum": 14
+			},
+			"examples": [
+				"{\n  \"ph_max\": 8.2\n}\n"
+			]
+		},
+		"soil": {
+			"propertyOrder": 190,
+			"title": "Soil",
+			"description": "Any details about the soil at the Study.",
+			"type": "string",
+			"examples": [
+				"{\n  \"soil\": \"Loamy.\"\n}\n"
+			]
+		},
+		"link": {
+			"propertyOrder": 200,
+			"title": "Website",
+			"description": "A website with further details about the study.",
+			"type": "string",
+			"format": "uri",
+			"examples": [
+				"{\n  \"link\": \"https://www.mywebsite.org/my-study\"\n}\n"
+			]
+		},
+		"plots_gps": {
+			"propertyOrder": 210,
+			"title": "Plots GPS",
+			"description": "The GeoJSON for the Study's plots layout.",
+			"type": "geojson"
+		},
 
 	
 
