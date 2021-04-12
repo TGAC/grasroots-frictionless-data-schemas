@@ -230,11 +230,42 @@
 			"description": "The GeoJSON for the Study's plots layout.",
 			"type": "geojson"
 		},
+		"aspect": {
+			"propertyOrder": 220,
+			"title": "Aspect",
+			"description": "The direction that the study is facing.",
+			"type": "string",
+			"constraints": {
+				"enum": [
+					"http://purl.obolibrary.org/obo/NCIT_C45849",
+					"http://purl.obolibrary.org/obo/NCIT_C45853",
+					"http://purl.obolibrary.org/obo/NCIT_C45851",
+					"http://purl.obolibrary.org/obo/NCIT_C45855",
+					"http://purl.obolibrary.org/obo/NCIT_C45850",
+					"http://purl.obolibrary.org/obo/NCIT_C45856",
+					"http://purl.obolibrary.org/obo/NCIT_C45852",
+					"http://purl.obolibrary.org/obo/NCIT_C45854",
+					"Unknown"
+				]
+			},
+			"examples": [
+				"{\n  \"aspect\": \"http://purl.obolibrary.org/obo/NCIT_C45853\"\n}\n"
+			]
+		},
+		"slope": {
+			"propertyOrder": 230,
+			"title": "Slope",
+			"description": "The slope of the Study.",
+			"type": "string",
+			"examples": [
+				"{\n  \"slope\": \"5 metres East to West\"\n}\n"
+			]
+		},
 
 	
 
 		"licenses": {
-			"propertyOrder": 110,
+			"propertyOrder": 1000,
 			"title": "Licenses",
 			"description": "The license(s) under which this package is published.",
 			"type": "array",
