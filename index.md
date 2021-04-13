@@ -11,6 +11,7 @@ Currently we have the following profiles:
  * [Field Trial](https://grassroots.tools/frictionless-data/schemas/field-trials/trial-resource.json)
  * [Study](https://grassroots.tools/frictionless-data/schemas/field-trials/study-resource.json)
  * [Plots](https://grassroots.tools/frictionless-data/schemas/field-trials/plots-resource.json)
+ * [Treatments](https://grassroots.tools/frictionless-data/schemas/field-trials/treatment-resource.json)
 
 We are also developing a [cross-platform stand-alone tool](https://github.com/TGAC/grassroots-client-frictionless-data) to extract the data from our Frictionless Data packages into convenient formats for people to use.
 

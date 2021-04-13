@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"title": "Field Trial Study Data Resource",
-	"description": "Field Trial Study Data Resource is a specification for detailing a Sstudy",
+	"description": "Field Trial Study Data Resource is a specification for detailing a Study",
 	"type": "object",
 	"required": [
 		"profile",
@@ -22,7 +22,7 @@
 		"id": {
 			"propertyOrder": 20,
 			"title": "Id",
-			"description": "The unique identifier of this field trial.",
+			"description": "The unique identifier of this Study.",
 			"type": "string",
 			"format": "uuid",
 			"context": "This is ideally a url-usable and human-readable name. Name `SHOULD` be invariant, meaning it `SHOULD NOT` change when its parent descriptor is updated.",
@@ -261,7 +261,16 @@
 				"{\n  \"slope\": \"5 metres East to West\"\n}\n"
 			]
 		},
+    "treatments": {
+			"propertyOrder": 260,
+			"title": "Treatments",
+			"description": "The Treatment Factoes used in this Study.",
+			"type": "array",
+			"examples": [
+				"{\n  \"slope\": \"5 metres East to West\"\n}\n"
+			]
 
+    },
 	
 
 		"licenses": {

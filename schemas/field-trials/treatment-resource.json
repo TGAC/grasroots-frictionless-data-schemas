@@ -1,0 +1,128 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Field Trial Treatment Data Resource",
+	"description": "Field Trial Treatment Data Resource is a specification for detailing a Treatment",
+	"type": "object",
+	"required": [
+		"profile",
+		"name"
+	],
+	"properties": {
+		"profile": {
+			"propertyOrder": 10,
+			"title": "Profile",
+			"description": "The profile of this descriptor.",
+			"context": "Every Package and Resource descriptor has a profile. The default profile, if none is declared, is `data-package` for Package and `data-resource` for Resource.",
+			"type": "string",
+			"examples": [
+				"{\n  \"profile\": \"tabular-data-package\"\n}\n",
+				"{\n  \"profile\": \"https://grassroots.tools/frictionless-data/schemas/field-trial-trial-package.json\"\n}\n"
+			]
+		},
+		"id": {
+			"propertyOrder": 20,
+			"title": "Id",
+			"description": "The unique identifier of this Treatment.",
+			"type": "string",
+			"format": "uuid",
+			"context": "This is ideally a url-usable and human-readable name. Name `SHOULD` be invariant, meaning it `SHOULD NOT` change when its parent descriptor is updated.",
+			"examples": [
+				"{\n  \"id\": \"5fb6903a24ce2068bd4f9266\"\n}\n"
+			]
+		},
+		"name": {
+			"propertyOrder": 30,
+			"title": "Name",
+			"description": "The name of the Treatment.",
+			"type": "string",
+			"pattern": "^([-a-z0-9._/])+$",
+			"context": "This is ideally a url-usable and human-readable name. Name `SHOULD` be invariant, meaning it `SHOULD NOT` change when its parent descriptor is updated.",
+			"examples": [
+				"{\n  \"name\": \"sucrose exposure\"\n}\n"
+			]
+		},
+		"url": {
+			"propertyOrder": 40,
+			"title": "Web address",
+			"description": "The web page documenting this Treatment",
+			"type": "string",
+      "format": "uri",
+			"examples": [
+				"{\n  \"url\": \"http://purl.obolibrary.org/obo/PECO_0001015\"\n}\n"
+			]
+		},
+		"description": {
+			"propertyOrder": 50,
+			"title": "Description",
+			"description": "The description of the Treatment.",
+			"type": "string",
+			"examples": [
+				"{\n  \"description\": \"A disaccharide exposure (PECO:0001014) involving the application of sucrose (CHEBI:17992).\"\n}\n"
+			]
+		},
+		"synonyms": {
+			"propertyOrder": 60,
+			"title": "Synonyms",
+			"description": "Any synonyms of this Treatment.",
+			"type": "array",
+			"examples": [
+				"{\n  \"synonyms\": [\n\"sucrose treatment\"\n]\n}\n"
+			]
+		},
+		"parent": {
+			"propertyOrder": 70,
+			"title": "Parent",
+			"description": "The name of the Treatment of which this Treatment is a subclass.",
+			"type": "string",
+			"examples": [
+				"{\n  \"parent\": \"disaccharide exposure\"\n}\n"
+			]
+		},
+
+
+		"licenses": {
+			"propertyOrder": 1000,
+			"title": "Licenses",
+			"description": "The license(s) under which this package is published.",
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"title": "License",
+				"description": "A license for this descriptor.",
+				"type": "object",
+				"properties": {
+					"name": {
+						"title": "Open Definition license identifier",
+						"description": "MUST be an Open Definition license identifier, see http://licenses.opendefinition.org/",
+						"type": "string",
+						"pattern": "^([-a-zA-Z0-9._])+$"
+					},
+					"path": {
+						"title": "Path",
+						"description": "A fully qualified URL, or a POSIX file path..",
+						"type": "string",
+						"pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+						"examples": [
+							"{\n  \"path\": \"file.csv\"\n}\n",
+							"{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
+						],
+						"context": "Implementations need to negotiate the type of path provided, and dereference the data accordingly."
+					},
+					"title": {
+						"title": "Title",
+						"description": "A human-readable title.",
+						"type": "string",
+						"examples": [
+							"{\n  \"title\": \"My Package Title\"\n}\n"
+						]
+					}
+				},
+				"context": "Use of this property does not imply that the person was the original creator of, or a contributor to, the data in the descriptor, but refers to the composition of the descriptor itself."
+			},
+			"context": "This property is not legally binding and does not guarantee that the package is licensed under the terms defined herein.",
+			"examples": [
+				"{\n  \"licenses\": [\n    {\n      \"name\": \"odc-pddl-1.0\",\n      \"path\": \"http://opendatacommons.org/licenses/pddl/\",\n      \"title\": \"Open Data Commons Public Domain Dedication and License v1.0\"\n    }\n  ]\n}\n"
+			]
+		}
+	}
+}
