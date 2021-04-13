@@ -264,10 +264,10 @@
     "treatments": {
 			"propertyOrder": 260,
 			"title": "Treatments",
-			"description": "The Treatment Factoes used in this Study.",
+			"description": "An array of Treatment Factors used in this Study. These Treatment Factors are defined at https://grassroots.tools/frictionless-data/schemas/field-trials/treatment-resource.json",
 			"type": "array",
 			"examples": [
-				"{\n  \"slope\": \"5 metres East to West\"\n}\n"
+				"{ \"treatments\": [ { ... } ]\n  \n}\n"
 			]
 
     },
