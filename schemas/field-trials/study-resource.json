@@ -20,7 +20,7 @@
 			]
 		},
 		"id": {
-			"propertyOrder": 10,
+			"propertyOrder": 20,
 			"title": "Id",
 			"description": "The unique identifier of this field trial.",
 			"type": "string",
@@ -31,7 +31,7 @@
 			]
 		},
 		"name": {
-			"propertyOrder": 20,
+			"propertyOrder": 30,
 			"title": "Name",
 			"description": "The name of the study.",
 			"type": "string",
@@ -42,7 +42,7 @@
 			]
 		},
 		"trial": {
-			"propertyOrder": 30,
+			"propertyOrder": 40,
 			"title": "Trial",
 			"description": "The name of the field trial that this study is a part of.",
 			"type": "string",
@@ -51,7 +51,7 @@
 			]
 		},
 		"location": {
-			"propertyOrder": 40,
+			"propertyOrder": 50,
 			"title": "Location",
 			"description": "The name of the location where this study took place.",
 			"type": "string",
@@ -60,7 +60,7 @@
 			]
 		},
 		"curator_name": {
-			"propertyOrder": 50,
+			"propertyOrder": 60,
 			"title": "Curator Name",
 			"description": "The name of the person curating this data.",
 			"type": "string",
@@ -69,7 +69,7 @@
 			]
 		},
 		"curator_email": {
-			"propertyOrder": 60,
+			"propertyOrder": 70,
 			"title": "Curator Email",
 			"description": "The email address of the person curating this data.",
 			"type": "string",
@@ -79,7 +79,7 @@
 			]
 		},
 		"contact_name": {
-			"propertyOrder": 70,
+			"propertyOrder": 80,
 			"title": "Contact Name",
 			"description": "The name of the person to contact about this data.",
 			"type": "string",
@@ -88,7 +88,7 @@
 			]
 		},
 		"contact_email": {
-			"propertyOrder": 80,
+			"propertyOrder": 90,
 			"title": "Contact Email",
 			"description": "The email address of the person to contact about this data.",
 			"type": "string",
@@ -98,7 +98,7 @@
 			]
 		},
 		"sowing_date": {
-			"propertyOrder": 90,
+			"propertyOrder": 100,
 			"title": "Sowing Date",
 			"description": "The date when the seeds were sown in the field.",
 			"type": "date",
@@ -107,7 +107,7 @@
 			]
 		},
 		"harvest_date": {
-			"propertyOrder": 100,
+			"propertyOrder": 110,
 			"title": "Harvest Date",
 			"description": "The date when the seeds were harvested from the field.",
 			"type": "date",
@@ -116,7 +116,7 @@
 			]
 		},
 		"description": {
-			"propertyOrder": 110,
+			"propertyOrder": 120,
 			"title": "Description",
 			"description": "A description of the Study.",
 			"type": "string",
@@ -125,7 +125,7 @@
 			]
 		},
 		"design": {
-			"propertyOrder": 120,
+			"propertyOrder": 130,
 			"title": "Design",
 			"description": "Information about the design of the Study.",
 			"type": "string",
@@ -134,7 +134,7 @@
 			]
 		},
 		"growing_conditions": {
-			"propertyOrder": 130,
+			"propertyOrder": 140,
 			"title": "Growing Conditionts",
 			"description": "The Growing Conditions of the Study.",
 			"type": "string",
@@ -143,7 +143,7 @@
 			]
 		},
 		"phenotype_notes": {
-			"propertyOrder": 140,
+			"propertyOrder": 150,
 			"title": "Phenotype Gathering Notese",
 			"description": "Any information relating to how phenotypes were taken..",
 			"type": "string",
@@ -152,7 +152,7 @@
 			]
 		},
 		"weather": {
-			"propertyOrder": 150,
+			"propertyOrder": 160,
 			"title": "Weather",
 			"description": "A web link to see any details of the weather relating to the study.",
 			"type": "string",
@@ -162,7 +162,7 @@
 			]
 		},
 		"crop": {
-			"propertyOrder": 160,
+			"propertyOrder": 170,
 			"title": "Crop",
 			"description": "The previous crop grown at the location of the Study.",
 			"type": "string",
@@ -171,7 +171,7 @@
 			]
 		},
 		"previous_crop": {
-			"propertyOrder": 170,
+			"propertyOrder": 180,
 			"title": "Previous Crop",
 			"description": "The previous crop grown at the location of the Study.",
 			"type": "string",
@@ -180,33 +180,33 @@
 			]
 		},
 		"ph_min": {
-			"propertyOrder": 170,
+			"propertyOrder": 190,
 			"title": "pH Minimum",
 			"description": "The minimum value of the pH of the soil for this Study.",
 			"type": "number",
 			"constraints": {
-				"minimum": 0,
-				"maximum": 14
+				"minimum": 0.0,
+				"maximum": 14.0
 			},
 			"examples": [
 				"{\n  \"ph_min\": 7.3\n}\n"
 			]
 		},
 		"ph_max": {
-			"propertyOrder": 180,
+			"propertyOrder": 200,
 			"title": "pH Maximum",
 			"description": "The maximum value of the pH of the soil for this Study.",
 			"type": "number",
 			"constraints": {
-				"minimum": 0,
-				"maximum": 14
+				"minimum": 0.0,
+				"maximum": 14.0
 			},
 			"examples": [
 				"{\n  \"ph_max\": 8.2\n}\n"
 			]
 		},
 		"soil": {
-			"propertyOrder": 190,
+			"propertyOrder": 210,
 			"title": "Soil",
 			"description": "Any details about the soil at the Study.",
 			"type": "string",
@@ -215,7 +215,7 @@
 			]
 		},
 		"link": {
-			"propertyOrder": 200,
+			"propertyOrder": 220,
 			"title": "Website",
 			"description": "A website with further details about the study.",
 			"type": "string",
@@ -225,13 +225,13 @@
 			]
 		},
 		"plots_gps": {
-			"propertyOrder": 210,
+			"propertyOrder": 230,
 			"title": "Plots GPS",
 			"description": "The GeoJSON for the Study's plots layout.",
 			"type": "geojson"
 		},
 		"aspect": {
-			"propertyOrder": 220,
+			"propertyOrder": 240,
 			"title": "Aspect",
 			"description": "The direction that the study is facing.",
 			"type": "string",
@@ -253,7 +253,7 @@
 			]
 		},
 		"slope": {
-			"propertyOrder": 230,
+			"propertyOrder": 250,
 			"title": "Slope",
 			"description": "The slope of the Study.",
 			"type": "string",
