@@ -94,6 +94,7 @@
 			"title": "Image",
 			"description": "The web address of this Programme's logo.",
 			"type": "string",
+			"format": "uri",
 			"examples": [
 				"{\n  \"logo\": \"http://example.com/image.jpg\"\n}\n"
 			]
