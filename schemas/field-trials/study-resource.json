@@ -97,6 +97,64 @@
 				"{\n  \"contact_email\": \"winter.wheat@crops.org\"\n}\n"
 			]
 		},
+		"contributors": {
+			"propertyOrder": 95,
+			"title": "People",
+			"description": "The people working on this study.",
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"title": "Person",
+				"description": "A person.",
+				"type": "object",
+				"properties": {
+					"name": {
+						"title": "Open Definition license identifier",
+						"description": "MUST be an Open Definition license identifier, see http://licenses.opendefinition.org/",
+						"type": "string",
+						"pattern": "^([-a-zA-Z0-9._])+$"
+					},
+					"email": {
+						"title": "Path",
+						"description": "A fully qualified URL, or a POSIX file path..",
+						"type": "string",
+						"pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+						"examples": [
+							"{\n  \"path\": \"file.csv\"\n}\n",
+							"{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
+						],
+						"context": "Implementations need to negotiate the type of path provided, and dereference the data accordingly."
+					},
+					"role": {
+						"title": "Role",
+						"description": "The role of this person within this field trial.",
+						"type": "string",
+						"examples": [
+							"{\n  \"role\": \"Curator\"\n}\n"
+						]
+					},
+					"affiliation": {
+						"title": "Affiliation",
+						"description": "The affiliation for this person.",
+						"type": "string",
+						"examples": [
+							"{\n  \"affiliation\": \"Earlham Institute\"\n}\n"
+						]
+					},
+					"orcid": {
+						"title": "ORCiD",
+						"description": "The ORCiD for this person. See https://orcid.org/ for more information",
+						"type": "string",
+						"examples": [
+							"{\n  \"orcid\": \"0000-0002-1825-0097\"\n}\n"
+						]
+					}
+				},
+				"context": "Use of this property does not imply that the person was the original creator of, or a contributor to, the data in the descriptor, but refers to the composition of the descriptor itself.",
+				"examples": [
+				"{\n  \"people\": [{ \"name\": \"Niget Tufnell\",\n \"email\": \"nige@spinal.tap\",\n \"role\": \"guitar wizard\",\n \"affiliation\": \"spinal tap\",\n, \"orcid\": \"0000-0000-0000-0000\"\n}]}"
+			]}
+		},
 		"sowing_date": {
 			"propertyOrder": 100,
 			"title": "Sowing Date",
