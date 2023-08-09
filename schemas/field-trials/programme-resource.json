@@ -99,6 +99,16 @@
 				"{\n  \"logo\": \"http://example.com/image.jpg\"\n}\n"
 			]
 		},
+		"objective": {
+			"propertyOrder": 90,
+			"title": "Objective",
+			"description": "The Programme's objective.",
+			"type": "string",
+			"format": "uri",
+			"examples": [
+				"{\n  \"objective\": \"We wanted to research treatments in relation to crop height.\"\n}\n"
+			]
+		},		
 		"licenses": {
 			"propertyOrder": 110,
 			"title": "Licenses",
